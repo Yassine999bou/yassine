@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psych Shorts Generator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Psychology Shorts Generator</h1>
+    <p>Generate vertical Reels/TikTok/Shorts with a cold, calm, confident structure.</p>
+
+    <div class="panel">
+      <label for="mood">Mood</label>
+      <select id="mood">
+        <option value="cold">Cold</option>
+        <option value="dark">Dark</option>
+        <option value="calm">Calm</option>
+      </select>
+
+      <label for="language">Language</label>
+      <select id="language">
+        <option value="english">English</option>
+      </select>
+
+      <button id="generateBtn">Generate Video</button>
+    </div>
+
+    <pre id="scriptOutput"></pre>
+
+    <div id="result" class="hidden">
+      <video id="preview" controls></video>
+      <a id="downloadLink" class="download" href="#">Download MP4</a>
+    </div>
+
+    <div id="status"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
